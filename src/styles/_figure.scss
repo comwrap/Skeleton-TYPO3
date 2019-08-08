@@ -1,0 +1,65 @@
+.figure {
+
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 $gutter/4;
+
+	&--left,
+	&--right {
+		max-width: 50%;
+
+		@media (max-width: $bpXS) {
+			max-width: none;
+			// Overwrite inline style with !important
+			width: 100% !important;
+		}
+	}
+
+	&--left {
+		float: left;
+		margin-right: $gutter/2;
+
+		@media (max-width: $bpXS) {
+			margin-right: 0;
+		}
+	}
+
+	&--right {
+		float: right;
+		margin-left: $gutter/2;
+
+		@media (max-width: $bpXS) {
+			margin-left: 0;
+		}
+	}
+
+	&--center {
+		max-width: none;
+		// Overwrite inline style with !important
+		width: 100% !important;
+	}
+
+	img {
+		display: block;
+		margin: 0;
+		width: 100%;
+		flex-shrink: 0;
+	}
+
+	&--center img {
+		width: 100%;
+	}
+
+	figcaption {
+		padding: $gutter/3;
+		width: 100%;
+		background: color('light');
+		font-size: .9em;
+	}
+
+	a {
+		color: currentColor;
+		text-decoration: none;
+	}
+
+}

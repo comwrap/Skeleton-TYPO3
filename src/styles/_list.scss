@@ -1,0 +1,22 @@
+.list {
+
+	list-style: none;
+	// Use overflow to fix a float issue
+	overflow: hidden;
+
+	li {
+		position: relative;
+		margin: $gutter/2 0;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: $gutter/3;
+			left: -$gutter*1.5;
+			width: $gutter;
+			height: 2px;
+			background: color('primary');
+		}
+	}
+
+}

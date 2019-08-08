@@ -1,0 +1,9 @@
+{# Don't delete this div. The content component doesn't work in a flex container without a wrapper. #}
+<div>
+	{% if figure.image.src %}
+		{% inject "figure/figure.njk", figure %}
+	{% endif %}
+	<div class="rte">
+		{{ bodytext | safe }}
+	</div>
+</div>

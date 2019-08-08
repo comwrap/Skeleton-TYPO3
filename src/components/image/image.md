@@ -1,0 +1,1 @@
+Component should be used in a grid. The image will fill the whole column when placed inside a flex container and acts as a background, with focus point support.

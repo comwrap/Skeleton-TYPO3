@@ -1,0 +1,14 @@
+.section {
+
+	position: relative;
+	margin: $gutter*4 0 0;
+
+	@media (max-width: $bpS) {
+		margin: $gutter*2 0 0;
+	}
+
+	&--gapless {
+		margin: $gutter/2 0 0;
+	}
+
+}

@@ -1,0 +1,9 @@
+.anchor {
+
+	position: absolute;
+	// Use a negative top when the header is fixed to avoid that the anchor gets covered by the header.
+	// The top should be equal to the height of the header plus some additional spacing.
+	top: 0;
+	pointer-events: none;
+
+}

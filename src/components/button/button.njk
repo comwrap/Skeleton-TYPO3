@@ -1,1 +1,1 @@
-<a href="#" class="button button--{{ color }}">{{ label }}</a>
+<a href="{{ href.value }}" {% if href.target %}target="{{ href.target }}"{% endif %} class="button">{{ label }}</a>

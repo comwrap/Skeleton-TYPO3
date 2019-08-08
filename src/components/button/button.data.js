@@ -1,4 +1,6 @@
 module.exports = {
-	color: 'light',
-	label: 'Button'
+	label: 'Button',
+	href: {
+		value: '#'
+	}
 }

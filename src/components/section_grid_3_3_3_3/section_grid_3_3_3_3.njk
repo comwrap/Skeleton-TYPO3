@@ -1,0 +1,26 @@
+<section class="section grid_3_3_3_3 {% if gapless == true %}section--gapless{% endif %}">
+	{% if anchor %}
+		{% inject "anchor/anchor.njk", { anchor: anchor } %}
+	{% endif %}
+	{% if header %}
+		<div class="row">
+			<div class="column">
+				<h2 class="h2 spacing-large">{{ header }}</h2>
+			</div>
+		</div>
+	{% endif %}
+	<div class="row">
+		<div class="column large-3 {% if sameheight %}flex{% endif %}">
+			{{ column1 | safe }}
+		</div>
+		<div class="column large-3 {% if sameheight %}flex{% endif %}">
+			{{ column2 | safe }}
+		</div>
+		<div class="column large-3 {% if sameheight %}flex{% endif %}">
+			{{ column3 | safe }}
+		</div>
+		<div class="column large-3 {% if sameheight %}flex{% endif %}">
+			{{ column4 | safe }}
+		</div>
+	</div>
+</section>

@@ -28,7 +28,14 @@ module.exports = [
 		path: 'index.{html,html.json}',
 		handler: 'rosid-handler-malvid',
 		opts: {
-			src: 'src/'
+			src: 'src/',
+			statuses: {
+				t3: {
+					label: 'T3',
+					description: 'Element for TYPO3',
+					color: '#fe8926'
+				}
+			}
 		}
 	}
 ]

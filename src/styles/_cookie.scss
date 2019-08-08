@@ -1,0 +1,61 @@
+.cookie {
+
+	position: fixed;
+	// Keep cookie fixed at the bottom, but reserve space below footer
+	// to avoid that the cookie overlaps the footer.
+	position: sticky;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: $gutter/1.5 0;
+	width: 100%;
+	background: color('white');
+	font-size: .8em;
+	z-index: 2;
+	transform: translateY(100%);
+	transition: transform $duration $timing;
+	border-top: 1px solid color('light');
+
+	@media (max-width: $bpS) {
+		padding: $gutter/2 0;
+	}
+
+	&.visible {
+		transform: none;
+	}
+
+	.column {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: $bpXS) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__text {
+		flex-shrink: 1;
+		margin-right: $gutter/2;
+		width: 100%;
+
+		@media (max-width: $bpXS) {
+			margin-bottom: $gutter/2;
+		}
+	}
+
+	&__text > * {
+		margin-bottom: 0;
+	}
+
+	&__button {
+		flex-shrink: 0;
+		margin-bottom: 0;
+
+		@media (max-width: $bpXS) {
+			width: 100%;
+			flex-grow: 1;
+		}
+	}
+
+}

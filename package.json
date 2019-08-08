@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "basicgrid": "^3.1.2",
+    "js-cookie": "^2.2.1",
     "normalize.css": "^8.0.1",
     "rosid": "^10.0.0",
     "rosid-handler-js": "^12.1.0",

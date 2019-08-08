@@ -18,11 +18,14 @@
   "dependencies": {
     "basicgrid": "^3.1.2",
     "js-cookie": "^2.2.1",
+    "mdn-polyfills": "^5.18.0",
     "normalize.css": "^8.0.1",
     "rosid": "^10.0.0",
     "rosid-handler-js": "^12.1.0",
     "rosid-handler-malvid": "^3.0.7",
     "rosid-handler-njk": "^7.2.0",
-    "rosid-handler-sass": "^6.0.4"
+    "rosid-handler-sass": "^6.0.4",
+    "smoothscroll-polyfill": "^0.4.4",
+    "url-polyfill": "^1.1.7"
   }
 }

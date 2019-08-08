@@ -24,9 +24,12 @@ $bpXXL: 1920px;
 $duration: .3s;
 $timing: cubic-bezier(.51, .92, .24, 1);
 
-// Typography -------------------------------------------------------- //
+// Typography -------------------------------------------------- //
 $fontStack: normal 400 112.5%/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // basicGrid --------------------------------------------------- //
 $basicGrid__width: $maxWidth;
 $basicGrid__gutter: $gutter;
+
+// formbase ---------------------------------------------------- //
+$formbase__active: color('primary');

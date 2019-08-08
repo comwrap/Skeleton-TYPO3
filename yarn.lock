@@ -2487,6 +2487,11 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
+formbase@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/formbase/-/formbase-11.0.0.tgz#a090aa46689efd15d6abe0468d722b5d6a0f95ac"
+  integrity sha512-/BIM0ssjmFrvUiDbgIPWqVx0paLYe50SYCXc5o0sRSNFZ1Sh1rU5lLCN5xA/qT7SdAZ+4yqff8eKVWPyOe6oag==
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"

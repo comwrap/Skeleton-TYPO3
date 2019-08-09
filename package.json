@@ -1,7 +1,5 @@
 {
-  "name": "skeleton-components",
-  "version": "1.0.0",
-  "description": "A front-end template build upon Rosid",
+  "description": "A front-end Malvid template build upon Rosid",
   "private": true,
   "authors": [
     "Tobias Reich <tobias@electerious.com>"

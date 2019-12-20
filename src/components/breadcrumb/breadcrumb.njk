@@ -1,0 +1,10 @@
+<div class="breadcrumb">
+	{% for item in content %}
+		{% if loop.last %}
+			<span class="breadcrumb__item">{{ item.href.label }}</span>
+		{% else %}
+			<a href="{{ item.href.value }}" {% if item.href.target %}target="{{ item.href.target }}"{% endif %} class="breadcrumb__link">{{ item.href.label }}</a>
+			<span class="breadcrumb__separator">/</span>
+		{% endif %}
+	{% endfor %}
+</div>

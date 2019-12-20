@@ -1,6 +1,6 @@
 import { scrollroot } from './_helpers'
 
-const scrollTo = function(hash) {
+export const scrollTo = function(hash) {
 
 	const targetElem = document.querySelector(hash)
 
@@ -19,7 +19,7 @@ const scrollTo = function(hash) {
 
 }
 
-document.querySelectorAll('a').forEach((elem) => {
+export const init = (elem) => {
 
 	const href = elem.getAttribute('href')
 
@@ -53,4 +53,6 @@ document.querySelectorAll('a').forEach((elem) => {
 
 	})
 
-})
+}
+
+document.querySelectorAll('a').forEach(init)

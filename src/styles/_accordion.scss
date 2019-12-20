@@ -1,0 +1,56 @@
+.accordion {
+
+	margin-bottom: $gutter/2;
+
+	&__item {
+		margin-bottom: 1px;
+	}
+
+	&__head,
+	&__body {
+		padding: $gutter/2;
+	}
+
+	&__head {
+		@extend %button;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		background: color('light');
+		text-align: left;
+	}
+
+	&__icon {
+		$size: 16px;
+
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: $size;
+		height: $size;
+		transition: transform $duration $timing;
+
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: color('primary');
+		}
+	}
+
+	&__item.active &__icon {
+		transform: scaleY(-1);
+	}
+
+	&__body {
+		display: none;
+		padding: $gutter/2;
+	}
+
+	&__item.active &__body {
+		display: block;
+	}
+
+}

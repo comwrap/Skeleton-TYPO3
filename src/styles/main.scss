@@ -2,6 +2,7 @@
 @import 'functions';
 @import 'vars';
 @import 'mixins';
+@import 'placeholders';
 
 // Modules ----------------------------------------------------- //
 @import '../../node_modules/normalize.css/normalize';
@@ -29,3 +30,4 @@
 @import 'figure';
 @import 'image';
 @import 'cookie';
+@import 'accordion';

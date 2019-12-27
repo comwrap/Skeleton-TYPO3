@@ -1,0 +1,9 @@
+<a class="teaser" href="{{ link.href.value }}" {% if link.href.target %}target="{{ link.href.target }}"{% endif %}>
+	<div class="teaser__media">
+		<div class="teaser__image" {% inject "background_styles/background_styles.njk", image %}></div>
+	</div>
+	<div class="teaser__content">
+		<p class="h3">{{ headline.text }}</p>
+		<div class="teaser__link color-primary">{{ link.href.label }} →</div>
+	</div>
+</a>

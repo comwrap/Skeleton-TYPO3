@@ -1,0 +1,20 @@
+<div class="accordion">
+	{% for item in content %}
+		<div class="accordion__item">
+			<button class="accordion__head">
+				{{ item.header }}
+				<div class="accordion__icon">
+					{% inject "icon_chevron/icon_chevron.njk" %}
+				</div>
+			</button>
+			<div class="accordion__body">
+				<div class="rte">
+					{{ item.bodytext | safe }}
+				</div>
+				{% if item.content %}
+					{{ item.content | safe }}
+				{% endif %}
+			</div>
+		</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,9 @@
+<a class="social_icon social_icon--{{ icon }}" href="{{ href.value }}" {% if href.target %}target="{{ href.target }}"{% endif %} aria-label="{{ href.label }}">
+	{% if icon == 'twitter' %}
+		{% inject "icon_twitter/icon_twitter.njk" %}
+	{% elseif icon == 'facebook' %}
+		{% inject "icon_facebook/icon_facebook.njk" %}
+	{% elseif icon == 'youtube' %}
+		{% inject "icon_youtube/icon_youtube.njk" %}
+	{% endif %}
+</a>

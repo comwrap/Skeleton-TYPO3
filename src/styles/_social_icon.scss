@@ -1,0 +1,29 @@
+.social_icon {
+
+	$size: 42px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 $gutter/2;
+	width: $size;
+	height: $size;
+	background: color('primary');
+	border-radius: 100%;
+
+	svg {
+		$size: 50%;
+
+		width: $size;
+		height: $size;
+		fill: color('white');
+	}
+
+	&--facebook svg {
+		$size: 60%;
+
+		width: $size;
+		height: $size;
+	}
+
+}

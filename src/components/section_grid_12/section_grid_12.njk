@@ -5,7 +5,7 @@
 	{% if headline %}
 		<div class="row">
 			<div class="column">
-				<h2 class="h2 spacing-large">{{ headline.text }}</h2>
+				<{{ headline.type }} class="{{ headline.style }} spacing-large">{{ headline.text }}</{{ headline.type }}>
 			</div>
 		</div>
 	{% endif %}

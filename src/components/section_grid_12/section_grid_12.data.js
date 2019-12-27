@@ -3,7 +3,9 @@ const bodytext = '<p>Just another lorem ipsum, lorem ipsum und noch mehr lorem i
 module.exports = {
 	anchor: 'anchor',
 	headline: {
-		text: 'Lorem ipsum'
+		text: 'Lorem ipsum',
+		type: 'h2',
+		style: 'h2'
 	},
 	column1: bodytext,
 	gapless: false

@@ -3,7 +3,6 @@ import 'mdn-polyfills/Node.prototype.remove'
 import 'url-polyfill'
 import smoothscroll from 'smoothscroll-polyfill'
 
-import './_accordion'
 import './_cookie'
 import './_scrollTo'
 

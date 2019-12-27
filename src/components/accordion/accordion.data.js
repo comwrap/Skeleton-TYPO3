@@ -1,5 +1,7 @@
 const item = {
-	header: 'Header',
+	headline: {
+		text: 'Lorem ipsum'
+	},
 	bodytext: '<p>Lorem text</p>'
 }
 

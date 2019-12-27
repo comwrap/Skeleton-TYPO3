@@ -2,7 +2,7 @@
 	{% for item in content %}
 		<div class="accordion__item">
 			<button class="accordion__head">
-				{{ item.header }}
+				{{ item.headline.text }}
 				<div class="accordion__icon">
 					{% inject "icon_chevron/icon_chevron.njk" %}
 				</div>

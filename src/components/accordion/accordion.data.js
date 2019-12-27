@@ -1,14 +1,18 @@
-const item = {
+const render = require('../../../render')
+
+const content = render('src/components/content/content.njk', require('../content/content.data'))
+
+const item = async () => ({
 	headline: {
 		text: 'Lorem ipsum'
 	},
-	bodytext: '<p>Lorem text</p>'
-}
+	bodytext: await content
+})
 
-module.exports = {
+module.exports = async () => ({
 	content: [
-		item,
-		item,
-		item
+		await item(),
+		await item(),
+		await item()
 	]
-}
+})

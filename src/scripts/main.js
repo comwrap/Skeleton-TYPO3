@@ -4,6 +4,7 @@ import 'url-polyfill'
 import smoothscroll from 'smoothscroll-polyfill'
 
 import './_cookie'
+import './_accordion'
 import './_scrollTo'
 
 smoothscroll.polyfill()

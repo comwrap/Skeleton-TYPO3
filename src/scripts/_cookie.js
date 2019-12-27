@@ -1,7 +1,7 @@
 import cookie from 'js-cookie'
 import { delay } from './_helpers'
 
-document.querySelectorAll('.cookie').forEach((elem) => {
+export const init = (elem) => {
 
 	const cookieKey = 'cookieAccepted'
 	const shouldShow = cookie.get(cookieKey) !== 'true'
@@ -37,4 +37,6 @@ document.querySelectorAll('.cookie').forEach((elem) => {
 	if (shouldShow === true) show()
 	else remove()
 
-})
+}
+
+document.querySelectorAll('.cookie').forEach(init)

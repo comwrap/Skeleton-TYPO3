@@ -1,5 +1,6 @@
 .section {
 
+	// The position must be relative as the anchor inside is positioned absolute
 	position: relative;
 	margin: $gutter*4 0 0;
 

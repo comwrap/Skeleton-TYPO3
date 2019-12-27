@@ -1,6 +1,7 @@
 module.exports = {
+	icon: 'twitter',
 	href: {
-		label: 'Label',
+		label: 'Twitter',
 		value: '#',
 		target: '_blank'
 	}

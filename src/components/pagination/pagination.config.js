@@ -1,4 +1,4 @@
 module.exports = {
-	group: 'layout',
+	group: 'content element',
 	status: 't3'
 }

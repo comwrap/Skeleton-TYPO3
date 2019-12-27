@@ -1,11 +1,11 @@
-<section class="section grid_4_8 {% if gapless == true %}section--gapless{% endif %}">
+<section class="section {% if gapless == true %}section--gapless{% endif %}">
 	{% if anchor %}
 		{% inject "anchor/anchor.njk", { anchor: anchor } %}
 	{% endif %}
-	{% if header %}
+	{% if headline %}
 		<div class="row">
 			<div class="column">
-				<h2 class="h2 spacing-large">{{ header }}</h2>
+				<h2 class="h2 spacing-large">{{ headline.text }}</h2>
 			</div>
 		</div>
 	{% endif %}

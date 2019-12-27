@@ -1,5 +1,4 @@
 module.exports = {
-	figure: require('../figure/figure.data'),
 	bodytext: `
 		<h2>Headline H2</h2>
 		<h3>Headline H3</h3>

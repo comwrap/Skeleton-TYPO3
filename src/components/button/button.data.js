@@ -1,6 +1,7 @@
 module.exports = {
-	label: 'Button',
 	href: {
-		value: '#'
+		label: 'Button',
+		value: '#',
+		target: '_blank'
 	}
 }

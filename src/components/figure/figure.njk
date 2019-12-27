@@ -1,7 +1,7 @@
 <figure class="figure figure--{{ position }}" style="width: {{ image_width }}px">
 
-	{% if href.value %}
-		<a href="{{ href.value }}" {% if href.target %}target="{{ href.target }}"{% endif %}>
+	{% if image.link %}
+		<a href="{{ image.link }}">
 	{% endif %}
 
 		<img src="{{ image.src }}" alt="{{ image.alternative }}">
@@ -10,7 +10,7 @@
 			<figcaption>{{ image.description }}</figcaption>
 		{% endif %}
 
-	{% if href.value %}
+	{% if image.link %}
 		</a>
 	{% endif %}
 

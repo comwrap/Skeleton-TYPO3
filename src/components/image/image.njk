@@ -1,4 +1,4 @@
-<div class="image" {% inject "hr_background_styles/hr_background_styles.njk", image %}>
+<div class="image" {% inject "background_styles/background_styles.njk", image %}>
 	{% if image_height %}
 		{# There's already a style attribute on the image so we need another div to set a height #}
 		<div class="image__height" style="height: {{ image_height }}px"></div>

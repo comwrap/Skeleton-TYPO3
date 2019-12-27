@@ -1,14 +1,10 @@
+const casual = require('../../../casual')
+
 module.exports = {
-	image: require('../background_styles/background_styles.data'),
-	headline: {
-		text: 'Lorem ipsum'
-	},
-	bodytext: '<p>Lorem ipsum</p>',
+	image: casual.image(),
+	headline: casual.headline(),
+	bodytext: casual.bodytext(),
 	link: {
-		href: {
-			label: 'Label',
-			value: '#',
-			target: '_blank'
-		}
+		href: casual.href()
 	}
 }

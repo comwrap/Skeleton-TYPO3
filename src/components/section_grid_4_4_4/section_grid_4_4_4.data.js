@@ -1,15 +1,11 @@
-const bodytext = '<p>Just another lorem ipsum, lorem ipsum und noch mehr lorem ipsum, hier ist noch eine lorem ipsum der content ist lorem ipsum und wir verkaufen lorem ipsums</p>'
+const casual = require('../../../casual')
 
 module.exports = {
 	anchor: 'anchor',
-	headline: {
-		text: 'Lorem ipsum',
-		type: 'h2',
-		style: 'h2'
-	},
-	column1: bodytext,
-	column2: bodytext,
-	column3: bodytext,
+	headline: casual.headline(),
+	column1: casual.bodytext(),
+	column2: casual.bodytext(),
+	column3: casual.bodytext(),
 	sameheight: true,
 	gapless: false
 }

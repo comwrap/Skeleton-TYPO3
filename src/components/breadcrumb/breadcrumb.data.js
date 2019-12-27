@@ -1,15 +1,13 @@
-const link = {
-	href: {
-		label: 'Lorem titel',
-		value: '#',
-		target: '_blank'
-	}
-}
+const casual = require('../../../casual')
+
+const item = () => ({
+	href: casual.href()
+})
 
 module.exports = {
 	content: [
-		link,
-		link,
-		link
+		item(),
+		item(),
+		item()
 	]
 }

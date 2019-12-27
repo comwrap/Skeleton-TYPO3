@@ -1,4 +1,6 @@
+const casual = require('../../../casual')
+
 module.exports = {
-	image: require('../background_styles/background_styles.data'),
+	image: casual.image(),
 	image_height: 320
 }

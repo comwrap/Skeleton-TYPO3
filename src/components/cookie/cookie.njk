@@ -2,7 +2,11 @@
 
 	<div class="row">
 		<div class="column">
-			<div class="cookie__text rte">{{ bodytext | safe }}</div>
+			<div class="cookie__text">
+				<div class="rte">
+					{{ bodytext | safe }}
+				</div>
+			</div>
 			<button class="cookie__button button">{{ button }}</button>
 		</div>
 	</div>

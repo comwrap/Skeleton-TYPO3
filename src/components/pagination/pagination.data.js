@@ -1,53 +1,24 @@
+const casual = require('../../../casual')
+
+const item = () => ({
+	...casual.href(),
+	label: undefined
+})
+
 module.exports = {
 	current: 5,
 	content: [
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		},
-		{
-			value: '#',
-			target: '_blank'
-		}
+		item(),
+		item(),
+		item(),
+		item(),
+		item(),
+		item(),
+		item(),
+		item(),
+		item(),
+		item(),
+		item(),
+		item()
 	]
 }

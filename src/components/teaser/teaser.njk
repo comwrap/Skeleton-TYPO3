@@ -4,6 +4,9 @@
 	</div>
 	<div class="teaser__content">
 		<p class="h3">{{ headline.text }}</p>
+		<div class="rte">
+			{{ bodytext | safe }}
+		</div>
 		<div class="teaser__link color-primary">{{ link.href.label }} →</div>
 	</div>
 </a>

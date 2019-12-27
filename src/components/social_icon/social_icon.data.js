@@ -1,8 +1,6 @@
+const casual = require('../../../casual')
+
 module.exports = {
 	icon: 'twitter',
-	href: {
-		label: 'Twitter',
-		value: '#',
-		target: '_blank'
-	}
+	href: casual.href()
 }

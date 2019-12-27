@@ -1,7 +1,5 @@
+const casual = require('../../../casual')
+
 module.exports = {
-	href: {
-		label: 'Button',
-		value: '#',
-		target: '_blank'
-	}
+	href: casual.href()
 }

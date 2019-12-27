@@ -1,11 +1,10 @@
+const casual = require('../../../casual')
 const render = require('../../../render')
 
 const content = render('src/components/content/content.njk', require('../content/content.data'))
 
 const item = async () => ({
-	headline: {
-		text: 'Lorem ipsum'
-	},
+	headline: casual.headline(),
 	bodytext: await content
 })
 

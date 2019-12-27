@@ -1,23 +1,10 @@
+const casual = require('../../../casual')
+
 module.exports = {
-	headline: {
-		text: 'Lorem ipsum',
-		type: 'h1',
-		style: 'h2',
-		position: 'left'
-	},
-	bodytext: '<p>Lorem ipsum</p>',
-	image: {
-		alternative: 'Lorem ipsum',
-		link: '#',
-		src: '#',
-		x: 0.5,
-		y: 0.5
-	},
+	headline: casual.headline(),
+	bodytext: casual.bodytext(),
+	image: casual.image(),
 	button: {
-		href: {
-			label: 'Label',
-			value: '#',
-			target: '_blank'
-		}
+		href: casual.href()
 	}
 }

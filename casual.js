@@ -29,7 +29,7 @@ casual.define('href', (label) => ({
 }))
 
 casual.define('image', (src) => ({
-	title: casual.text,
+	title: casual.title,
 	alternative: casual.title,
 	description: casual.sentence,
 	link: '#',

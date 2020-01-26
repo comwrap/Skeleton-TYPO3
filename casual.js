@@ -19,7 +19,7 @@ casual.define('text', (n) => `
 `)
 
 casual.define('bodytext', (n) => `
-	<p>${ casual.sentences(1) } Esse <span class="mark">amet consequatur excepturi</span> porro lorem <b>ipsum</b> <i>dolor</i>. ${ casual.sentences(n || 1) }<p>
+	<p>${ casual.sentences(1) } Esse <span class="mark">amet consequatur excepturi</span> porro lorem <b>ipsum</b> <i>dolor</i>. ${ casual.sentences(n || 1) }</p>
 `)
 
 casual.define('href', (label) => ({
